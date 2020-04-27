@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    width: 50%;
+    text-align: center;
+    background-color: pink;
+    padding: 5px 0 5px 0;
+}
+
+.container {
+    width: 75%;
+    margin: 3% 0 3% 0;
+    padding: 10px 0 10px 0;
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.random-number {
+    float: left;
+    position: relative;
+    background-color: grey;
+    height: 200px;
+    width: 40%;
+    margin-right: 10px;
+    font-size: 4em;
+}
+
+.wins-loses {
+    float: left;
+    position: relative;
+    background-color: grey;
+    height: 200px;
+    width: 20%;
+    font-size: 1em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display:table;
+}
+
+.crystal-array {
+    width: 75%;
+    margin-top: 3%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.crystal {
+    height: 80px;
+    width: 80px;
+    border: none;
+    padding: 0;
+    margin-right: 3px;
+}
+
+
+.total-score {
+    background-color: grey;
+    font-size: 1em;
+    width: 45%;
+    margin-top: 3%;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--scripts-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    
+    <title>Crystals Collector Game</title>
+</head>
+
+<body>
+
+<header class="header"><h1>Crystals Collector!</h1></header>
+
+<div class="container">
+    <p>You will be given a random number at the start of this game.</p>
+    <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p> 
+    <p>Each time when the game starts, the game will change the value of each crystal.</p>
+</div>
+
+<!--Random Number-->
+<div class="clearfix">
+    <div class="random-number" id="randNum">0</div>
+
+    <!--Wins and Losses-->
+    <div class="wins-loses">
+        <p>Wins:</p>
+        <p id="wins">0</p>
+        <p>Losses:</p>
+        <p id="losses">0</p>
+    </div>
+</div>
+
+<!--four crystal buttons-->
+<div class="crystal-array" id="crysArray">
+    <button id="crystal1" class="crystal"><img src="assets/images/crystal01.png" alt=""></button>
+    <button id="crystal2" class="crystal"><img src="assets/images/crystal02.png" alt=""></button>
+    <button id="crystal3" class="crystal"><img src="assets/images/crystal03.png" alt=""></button>
+    <button id="crystal4" class="crystal"><img src="assets/images/crystal04.png" alt=""></button>
+</div>
+
+<!--total score-->
+<div class="total-score">
+    <div>Your total score is:</div>
+    <br>
+    <div id="totalScore">0</div>
+</div>
+
+
+
+</body>
+</html>
