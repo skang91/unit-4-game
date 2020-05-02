@@ -4,26 +4,26 @@ var crystal2 = 0;
 var crystal3 = 0;
 var crystal4 = 0;
 
-//function for random number between 1 to 20
+//function for random number between 19 to 120
 function randomNumberGenerator() {
-    randomNumber = Math.floor(Math.random() * (20) +1);
+    randomNumber = Math.floor(Math.random() * (120 -19 +1) +19);
     console.log("randome number is: " + randomNumber);
 
     $("#randomNumberId").html(randomNumber);
 }
 
-//function for each crystal between 1 to 20
+//function for each crystal between 1 to 12
 function randomCrystalValueGenerator() {
-    crystal1 = Math.floor(Math.random() * 20) +1;
+    crystal1 = Math.floor(Math.random() * 12) +1;
     console.log("Crystal 1 value is: " + crystal1);
 
-    crystal2 = Math.floor(Math.random() * 20) +1;
+    crystal2 = Math.floor(Math.random() * 12) +1;
     console.log("Crystal 2 value is: " + crystal2);
 
-    crystal3 = Math.floor(Math.random() * 20) +1;
+    crystal3 = Math.floor(Math.random() * 12) +1;
     console.log("Crystal 3 value is: " + crystal3);
 
-    crystal4 = Math.floor(Math.random() * 20) +1;
+    crystal4 = Math.floor(Math.random() * 12) +1;
     console.log("Crystal 4 value is: " + crystal4);
     }           
     
