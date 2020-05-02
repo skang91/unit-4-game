@@ -4,9 +4,9 @@ var crystal2 = 0;
 var crystal3 = 0;
 var crystal4 = 0;
 
-//function for random number between 10 to 100
+//function for random number between 1 to 20
 function randomNumberGenerator() {
-    randomNumber = Math.floor(Math.random() * ((100-10) +1) +1);
+    randomNumber = Math.floor(Math.random() * (20) +1);
     console.log("randome number is: " + randomNumber);
 
     $("#randomNumberId").html(randomNumber);
@@ -42,14 +42,14 @@ var totalScore = 0;
 //click function to increase score when it clicks
 //crystal 1    
     $("#crystal1").on("click", function() {
-        toatalScore = totalScore + crystal1;
+        totalScore = totalScore + crystal1;
         console.log(totalScore);
     $("#totalScore").html(totalScore);
 
         //when user wins
         if (totalScore === randomNumber) {
             wins = wins +1;
-            $("#wins").html("Wins: " + wins);
+            $("#wins").html(wins);
             console.log("you win");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -60,7 +60,7 @@ var totalScore = 0;
             //when use losses
         if (totalScore > randomNumber) {
             losses = losses +1;
-            $("#losses").html("Losses: " +losses);
+            $("#losses").html(losses);
             console.log("you lose");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -71,14 +71,14 @@ var totalScore = 0;
 
     //crystal 2    
     $("#crystal2").on("click", function() {
-        toatalScore = totalScore + crystal2;
+        totalScore = totalScore + crystal2;
         console.log(totalScore);
         $("#totalScore").html(totalScore);
 
         //when user wins
         if (totalScore === randomNumber) {
             wins = wins +1;
-            $("#wins").html("Wins: " + wins);
+            $("#wins").html(wins);
             console.log("you win");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -89,7 +89,7 @@ var totalScore = 0;
             //when use losses
         if (totalScore > randomNumber) {
             losses = losses +1;
-            $("#losses").html("Losses: " +losses);
+            $("#losses").html(losses);
             console.log("you lose");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -100,14 +100,14 @@ var totalScore = 0;
 
     //crystal 3
     $("#crystal3").on("click", function() {
-        toatalScore = totalScore + crystal3;
+        totalScore = totalScore + crystal3;
         console.log(totalScore);
         $("#totalScore").html(totalScore);
 
         //when user wins
         if (totalScore === randomNumber) {
             wins = wins +1;
-            $("#wins").html("Wins: " + wins);
+            $("#wins").html(wins);
             console.log("you win");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -118,7 +118,7 @@ var totalScore = 0;
             //when use losses
         if (totalScore > randomNumber) {
             losses = losses +1;
-            $("#losses").html("Losses: " +losses);
+            $("#losses").html(losses);
             console.log("you lose");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -129,14 +129,14 @@ var totalScore = 0;
 
     //crystal 4
     $("#crystal4").on("click", function() {
-        toatalScore = totalScore + crystal4;
+        totalScore = totalScore + crystal4;
         console.log(totalScore);
         $("#totalScore").html(totalScore);
 
         //when user wins
         if (totalScore === randomNumber) {
             wins = wins +1;
-            $("#wins").html("Wins: " + wins);
+            $("#wins").html(wins);
             console.log("you win");
             randomNumberGenerator();
             randomCrystalValueGenerator();
@@ -147,7 +147,7 @@ var totalScore = 0;
             //when use losses
         if (totalScore > randomNumber) {
             losses = losses +1;
-            $("#losses").html("Losses: " +losses);
+            $("#losses").html(losses);
             console.log("you lose");
             randomNumberGenerator();
             randomCrystalValueGenerator();

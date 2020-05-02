@@ -7,22 +7,24 @@ body {
 .header {
     width: 50%;
     text-align: center;
-    background-color:royalblue;
-    padding: 5px 0 5px 0;
+    background-color:rgba(65, 105, 225, 0.658);
+    padding: 5px 1px 5px 1px;
 }
 
 .container {
     width: 75%;
     margin: 3% 0 3% 0;
-    padding: 10px 0 10px 0;
     background-color: lightgoldenrodyellow;
     color:black;
 }
 
+.container p {
+    padding: 10px 1px 10px 1px;
+}
 .random-number {
     float: left;
     position: relative;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.562);
     height: 200px;
     width: 40%;
     margin-right: 10px;
@@ -32,10 +34,14 @@ body {
 .wins-loses {
     float: left;
     position: relative;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.562);
     height: 200px;
     width: 20%;
     font-size: 1em;
+}
+
+.wins-loses p {
+    padding: 10px 1px 10px 1px;
 }
 
 .clearfix::after {
@@ -64,7 +70,14 @@ img {
 
 
 .total-score {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.562);
+    font-size: 1em;
+    width: 45%;
+    margin-top: 3%;
+}
+
+.total-number {
+    background-color: rgba(0, 0, 0, 0.562);
     font-size: 1em;
     width: 45%;
     margin-top: 3%;

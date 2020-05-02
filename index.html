@@ -14,7 +14,7 @@
 
 <body>
 
-<header class="header"><h1>Crystals Collector!</h1></header>
+<header><h1 class="header">Crystals Collector!</h1></header>
 
 <div class="container">
     <p>You will be given a random number at the start of this game.</p>
@@ -26,14 +26,13 @@
 
 <!--Random Number-->
 <div class="clearfix">
-    <div class="random-number" id="randomNumberId">###</div>
+    <div class="random-number" id="randomNumberId">##</div>
 
     <!--Wins and Losses-->
     <div class="wins-loses">
-        <p>Wins:</p>
-        <p id="wins">0</p>
-        <p>Losses:</p>
-        <p id="losses">0</p>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+    
     </div>
 </div>
 
@@ -46,16 +45,13 @@
 </div>
 
 <!--total score-->
-<div class="total-score">
-    <div>Your total score is:</div>
-    <br>
-    <div id="totalScore">0</div>
-</div>
+<div class="total-score">Your total score is:</div>   
+<div class="total-number" id="totalScore">0</div>
 
 <!--scripts-->
 
-<script type="text/javascript" src="assets/javascript/game.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
