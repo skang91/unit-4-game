@@ -1,4 +1,4 @@
-#Crystal Collector Game
+# Crystal Collector Game
 
 ![screenshot](screenshot.png)
 
